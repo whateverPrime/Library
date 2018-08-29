@@ -40,5 +40,15 @@ linux 任务1（20180823发布，20180824统一检查）
 3. 使用sed 在test中新增一行 'He is studying linux!' 并生成test3文件
 4. 使用sed 在test3文件中间直接插入一行 'You are studying linux!' 
 5. 对test3 文件进行直接修改 'linux' 为'LINUX' 
-6. 将以上代码放在hw2.sh 中保存，并用 bash hw2.sh 操作实现
+6. 将以上代码放在hw2.sh 中保存，并用 bash hw.sh 操作实现
+```
+
+##任务3##
+**20180829发布，20180830检查**
+
+```
+1. 使用awk 命令将test3.txt 文件中的空格符号换成tab 分隔符
+2. 使用awk+if 语句来做判断，当第一列为'He' 'You' 'I' 的时候分别进行不同处理，详细如下图，结果文件保存为hw3_1.txt
+3. 提取'He' 'You' 'I' 及相关级别 生成文件hw3_2.txt
+4. 将所使用的代码保存在hw3.sh 
 ```
