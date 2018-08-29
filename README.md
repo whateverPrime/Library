@@ -1,4 +1,4 @@
 # Library
-Aim to provide support for Bio-info learning
+这里是WhateverP的王国
 
-sdfsdfsd第三方供电所覆盖
+建立Library的目的是为了能与小伙伴共同学习Linux及Python

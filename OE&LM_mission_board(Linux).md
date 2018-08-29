@@ -40,5 +40,5 @@ linux 任务1（20180823发布，20180824统一检查）
 3. 使用sed 在test中新增一行 'He is studying linux!' 并生成test3文件
 4. 使用sed 在test3文件中间直接插入一行 'You are studying linux!' 
 5. 对test3 文件进行直接修改 'linux' 为'LINUX' 
-6. 将以上代码放在hw2.sh 中保存，并用 bash hw.sh 操作实现
+6. 将以上代码放在hw2.sh 中保存，并用 bash hw2.sh 操作实现
 ```
