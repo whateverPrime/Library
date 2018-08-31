@@ -58,3 +58,15 @@ linux 任务1（20180823发布，20180824统一检查）
 
 **hw3_2.txt**
 ![](http://p5v6ynkbf.bkt.clouddn.com/18-8-29/55437660.jpg)
+
+**对于这次作业感觉棘手的小伙伴不要气馁，因为这是寿老师我故意刁难你们的！！！，除非是有基础，要不然一下子接触很少会知道的，但是希望大家做到考后100分，就是之前不知道的知识点这次能渐渐熟练起来，代码及相关说明如下（你有更好的方法也可以展示出来）**
+```
+#先对test3.txt 文件直接替换空格为tab分隔符
+sed -i 's/ /\t/g' test3.txt
+
+#利用三个条件匹配加上信息
+cat test3.txt |awk -F'\t' -v OFS='\t' '{if($1=="He") print $0";level:bad";else if($1=="You") print $0";level:excellent";else if($1=="I") print $0";python;level:awesome"}' >hw3_1.txt
+
+#设置三种分隔符为输入符号，输出分隔符设定为tab分隔符，$NF指的是啥自己查~~
+awk -F'\t|;|:' -v OFS="\t" '{print $1,$NF}' hw3_1.txt>hw3_2.txt
+```
