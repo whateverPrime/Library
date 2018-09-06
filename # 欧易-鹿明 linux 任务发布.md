@@ -3,11 +3,12 @@
 **这是欧易-鹿明 共同学习进步的学习小群，会不断更新有关linux 的作业及相关解释，平均2周一次测试**
 [TOC]
 
-##前置任务及相关软件##
+##前置任务及相关软件
 
 ```
 前置任务：在华为云路径下：/public/hstore2/luming/study/linux
 创建各自的工作目录，设置自己的姓名为名称。
+每次任务完成情况都会打分的
 ```
 
 [点击下载notepad]( https://pc.qq.com/detail/0/detail_1300.html)
@@ -15,9 +16,9 @@
 [点击下载Xshell](https://pc.qq.com/detail/4/detail_2644.html)
 
 
-## 任务1##
+## 任务1
 
-**正式开始啦~~下次测试时间20180903 **
+**正式开始啦,下次测试时间20180903 **
 ```
 linux 任务1（20180823发布，20180824统一检查）
 1.创建目录test1和test2。
@@ -28,8 +29,17 @@ linux 任务1（20180823发布，20180824统一检查）
 6.进入test2目录下的test1目录，删除test.txt文件。
 7.在第6题的基础上，退出到上一级目录，删除test1目录。
 ```
+**任务完成情况**
 
-##任务2##
+```
+chenmin: 85，但是要注意mv操作，是重命名还是是转移路径
+dingshan: 80通过，但是也要注意mv操作跟cp命令，哪个是拷贝；此外作业脚本最好一键化能跑完的，具体过程不需要写，绝对路径看着也挺多的，相对路径就可以了；最后一个cd 什么情况
+tianquan: 你的结果为啥跟chenmin的一样 :D
+yinxiaoling: 你的结果为啥也跟chenmin的一样 ：P
+
+```
+
+##任务2
 
 **20180827发布，20180829检查 **
 
@@ -42,8 +52,16 @@ linux 任务1（20180823发布，20180824统一检查）
 5. 对test3 文件进行直接修改 'linux' 为'LINUX' 
 6. 将以上代码放在hw2.sh 中保存，并用 bash hw.sh 操作实现
 ```
+**任务完成情况**
 
-##任务3##
+```
+chenmin: 90 最后忘记直接修改test3.txt 文件
+dingshan: 70 根据脚本生成的test3.txt 是空的
+tianquan: 没发现结果
+yinxiaoling: 90 最后忘记直接修改test3.txt 文件
+```
+
+##任务3
 
 **20180829发布，20180830检查**
 
@@ -70,8 +88,16 @@ cat test3.txt |awk -F'\t' -v OFS='\t' '{if($1=="He") print $0";level:bad";else i
 #设置三种分隔符为输入符号，输出分隔符设定为tab分隔符，$NF指的是啥自己查~~
 awk -F'\t|;|:' -v OFS="\t" '{print $1,$NF}' hw3_1.txt>hw3_2.txt
 ```
+**任务完成情况**
 
-##任务4##
+```
+chenmin: 60 跑脚本生成的文件不对
+dingshan: 没发现结果
+tianquan: 没发现结果
+yinxiaoling: 30 OFS 不是ORS
+```
+
+##任务4
 
 **20180904发布，20180905检查**
 **相关支持文件在路径 /public/hstore2/luming/study/linux/Task_release/task4 下面**
@@ -86,5 +112,11 @@ awk -F'\t|;|:' -v OFS="\t" '{print $1,$NF}' hw3_1.txt>hw3_2.txt
 
 ![](http://p5v6ynkbf.bkt.clouddn.com/18-9-5/58913642.jpg)
 
+**任务完成情况**
 
-
+```
+chenmin:
+dingshan:
+tianquan:
+yinxiaoling:
+```
