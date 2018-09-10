@@ -14,7 +14,7 @@
 [点击下载Pycharm](https://blog.csdn.net/pdcfighting/article/details/80297499)
 [点击下载Anaconda](https://www.anaconda.com/download/ )
 
->>建议下载3.6版本的，此外Anaconda 需要设置下环境变量
+>建议下载3.6版本的，此外Anaconda 需要设置下环境变量
 >环境变量设置：https://jingyan.baidu.com/article/60ccbcebb2b81264cab197b4.html
 
 >如果在华为云上调用python3 的，请在/home/自己个人路径下 添加代码
