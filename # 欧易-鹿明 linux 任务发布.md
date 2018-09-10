@@ -39,7 +39,7 @@ yinxiaoling: 你的结果为啥也跟chenmin的一样 ：P
 
 ```
 
-##任务2
+## 任务2
 
 **20180827发布，20180829检查 **
 
@@ -61,7 +61,7 @@ tianquan: 没发现结果
 yinxiaoling: 90 最后忘记直接修改test3.txt 文件
 ```
 
-##任务3
+## 任务3
 
 **20180829发布，20180830检查**
 
@@ -97,7 +97,7 @@ tianquan: 没发现结果
 yinxiaoling: 30 OFS 不是ORS
 ```
 
-##任务4
+## 任务4
 
 **20180904发布，20180905检查**
 **相关支持文件在路径 /public/hstore2/luming/study/linux/Task_release/task4 下面**
