@@ -1,4 +1,6 @@
 # Library
-这里是WhateverP的王国
 
-建立Library的目的是为了能与小伙伴共同学习Linux及Python
+这里是WhateverP的花园，培养世界的花朵
+欧易-鹿明合作培训 是相关培训发布及完成度评价
+
+以后会不定期上传一些稀奇古怪的东西

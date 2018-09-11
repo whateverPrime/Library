@@ -115,8 +115,8 @@ yinxiaoling: 30 OFS 不是ORS
 **任务完成情况**
 
 ```
-chenmin:
-dingshan:
-tianquan:
-yinxiaoling:
+chenmin: 
+dingshan: 
+tianquan: 
+yinxiaoling: 
 ```
