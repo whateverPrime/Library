@@ -77,7 +77,7 @@ yinxiaoling: 90 最后忘记直接修改test3.txt 文件
 **hw3_2.txt**
 ![](http://p5v6ynkbf.bkt.clouddn.com/18-8-29/55437660.jpg)
 
-**对于这次作业感觉棘手的小伙伴不要气馁，因为这是寿老师我故意刁难你们的！！！，除非是有基础，要不然一下子接触很少会知道的，但是希望大家做到考后100分，就是之前不知道的知识点这次能渐渐熟练起来，代码及相关说明如下（你有更好的方法也可以展示出来）**
+**对于这次作业感觉棘手的小伙伴不要气馁，因为这是有意设置的。希望大家做到考后100分，逐渐熟练起来，先关代码及相关说明如下（我们这边鼓励大家有不同的方法解决问题）**
 ```
 #先对test3.txt 文件直接替换空格为tab分隔符
 sed -i 's/ /\t/g' test3.txt
@@ -115,8 +115,7 @@ yinxiaoling: 30 OFS 不是ORS
 **任务完成情况**
 
 ```
-chenmin: 
-dingshan: 
-tianquan: 
-yinxiaoling: 
+chenmin: 95 最后' 跟 score.txt 空格分开
+tianquan: 95 没有加注释
+yinxiaoling: 80 没有result3.txt 文件
 ```
