@@ -63,6 +63,9 @@ export PATH=/media/data/software/python/Python_v3.6/bin/:$PATH
 **任务完成情况**
 
 ```
+chenmin: 95 前面完成的很好~~最后一题的int只能转换为整数，小数无法运算，可用eval将字符串转换为表达式
+yinxiaoling: 79 作为第一个提交作业的童鞋，积极性很赞~~ 需要注意：1）insert是对列表的处理方法，对字符串不适用。逗号替换可以使用replace。2）a[1] 只提取了a中的第二个字母 3）print("hello," + c +) 手抖多了个加号嘛? 4）-2的绝对值：abs(-2) 5）10除以3保留两位小数：round(10/3,2) 6）字符串类型转换为表达式：eval 7）代码中没有循环或判断时，不需要tab缩进，直接写就好。
+tianquan: 95 只差一点~~第四题代码少了半个括号
 lujiawei： 95 第2题注意题目是对变量a进行处理，不是直接打印出来，参考replace方法。
 wangyayu：95 最后一题int()只能转换为整数，小数无法运算，可用eval()。
 mahaichao: 100 
