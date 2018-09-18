@@ -33,10 +33,10 @@ linux 任务1（20180823发布，20180824统一检查）
 
 ```
 chenmin: 85，但是要注意mv操作，是重命名还是是转移路径
-dingshan: 80通过，但是也要注意mv操作跟cp命令，哪个是拷贝；此外作业脚本最好一键化能跑完的，具体过程不需要写，绝对路径看着也挺多的，相对路径就可以了；最后一个cd 什么情况
+dingshan: 80，但是也要注意mv操作跟cp命令，哪个是拷贝；此外作业脚本最好一键化能跑完的，具体过程不需要写，绝对路径看着也挺多的，相对路径就可以了；最后一个cd 什么情况
 tianquan: 你的结果为啥跟chenmin的一样 :D
 yinxiaoling: 你的结果为啥也跟chenmin的一样 ：P
-
+wenxing: 100
 ```
 
 ## 任务2
@@ -58,7 +58,7 @@ yinxiaoling: 你的结果为啥也跟chenmin的一样 ：P
 chenmin: 90 最后忘记直接修改test3.txt 文件
 dingshan: 70 根据脚本生成的test3.txt 是空的
 tianquan: 没发现结果
-yinxiaoling: 90 最后忘记直接修改test3.txt 文件
+yinxiaoling: 90 最后忘记直接修改test3.txt 文件 
 ```
 
 ## 任务3
@@ -78,6 +78,7 @@ yinxiaoling: 90 最后忘记直接修改test3.txt 文件
 ![](http://p5v6ynkbf.bkt.clouddn.com/18-8-29/55437660.jpg)
 
 **对于这次作业感觉棘手的小伙伴不要气馁，因为这是有意设置的。希望大家做到考后100分，逐渐熟练起来，先关代码及相关说明如下（我们这边鼓励大家有不同的方法解决问题）**
+
 ```
 #先对test3.txt 文件直接替换空格为tab分隔符
 sed -i 's/ /\t/g' test3.txt
@@ -106,7 +107,7 @@ yinxiaoling: 30 OFS 不是ORS
 1.使用awk输出sutdent.txt中年龄大于等于15的到文件result1.txt
 2.使用awk输出sutdent.txt中性别为M，且体重小于50的结果到文件result2.txt
 3.使用awk输出sutdent.txt中ID、Height、Weight三列到文件result3.txt
-4.使用awk匹配文件sutdent.txt和score.txt，如果学生id存在则将其分数添加到sutdent.txt最后一列，不存在添加NA
+4.使用awk匹配文件sutdent.txt和score.txt，如果学生id存在则将其分数添加到sutdent.txt最后一列，不存在添加NA，输出结果到result4.txt
 ```
 **示例如下：**
 
@@ -115,7 +116,24 @@ yinxiaoling: 30 OFS 不是ORS
 **任务完成情况**
 
 ```
-chenmin: 95 最后' 跟 score.txt 空格分开
-tianquan: 95 没有加注释
+chenmin: 100
+tianquan: 100 最好加上注释哈
 yinxiaoling: 80 没有result3.txt 文件
+lujiawei:90 只能在自己的路径下运行哈，输入输出不需要用绝对路径
+maHaiChao:75 最后一个还没完成
+```
+
+## 任务5
+
+**20180918发布，20180924检查**
+**相关支持文件在路径 /public/hstore2/luming/study/linux/Task_release/task5 下面**
+
+```
+1. 查看当前用户并显示用户个数
+2. 取 cancer.txt 与 anti-cancer.txt 交集结果输入到result1.txt
+3. 取 cancer.txt 与 anti-cancer.txt 并集结果输入到result2.txt
+4. 取 cancer.txt 中独有的结果而在 anti-cancer.txt 没有的结果输入到result3.txt
+5. 取 cancer.txt 中没有的结果而在 anti-cancer.txt 独有的结果输入到result4.txt
+6. 写个循环脚本，读取当前路径下的result开头的文件，用各result文件与 fpkm_anno_test.txt匹配ID，匹配到的结果输出到result_anno.txt
+如result1.txt 文件与 fpkm_anno_test.txt 匹配后，输出后者含有result1.txt 信息的所有行到result_anno.txt
 ```
