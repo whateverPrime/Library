@@ -18,17 +18,16 @@
 
 ## 任务1
 
-**正式开始啦,下次测试时间20180903 **
-```
-linux 任务1（20180823发布，20180824统一检查）
-1.创建目录test1和test2。
-2.在test1下面创建一个名叫test.txt的文件。
-3.为test.txt文件增加内容为“I am studying linux.”。
-4.把test.txt文件拷贝到test2目录下。
-5.把test1目录移动到test2目录下。
-6.进入test2目录下的test1目录，删除test.txt文件。
-7.在第6题的基础上，退出到上一级目录，删除test1目录。
-```
+
+**linux 任务1（20180823发布，20180824统一检查）**
+>1.创建目录test1和test2。
+>2.在test1下面创建一个名叫test.txt的文件。
+>3.为test.txt文件增加内容为“I am studying linux.”。
+>4.把test.txt文件拷贝到test2目录下。
+>5.把test1目录移动到test2目录下。
+>6.进入test2目录下的test1目录，删除test.txt文件。
+>7.在第6题的基础上，退出到上一级目录，删除test1目录。
+
 **任务完成情况**
 
 ```
@@ -43,15 +42,15 @@ wenxing: 100
 
 **20180827发布，20180829检查 **
 
-```
-建议下载notepad（WinScp的使用者可以设置内置编辑器为notepad）
-1. 在test2 里添加一个名为hw2.sh 的文件先放着
-2. 使用sed 替换test 中的'linux' 为'LINUX' 并生成test2文件
-3. 使用sed 在test中新增一行 'He is studying linux!' 并生成test3文件
-4. 使用sed 在test3文件中间直接插入一行 'You are studying linux!' 
-5. 对test3 文件进行直接修改 'linux' 为'LINUX' 
-6. 将以上代码放在hw2.sh 中保存，并用 bash hw.sh 操作实现
-```
+
+>建议下载notepad（WinScp的使用者可以设置内置编辑器为notepad）
+>1. 在test2 里添加一个名为hw2.sh 的文件先放着
+>2. 使用sed 替换test 中的'linux' 为'LINUX' 并生成test2文件
+>3. 使用sed 在test中新增一行 'He is studying linux!' 并生成test3文件
+>4. 使用sed 在test3文件中间直接插入一行 'You are studying linux!' 
+>5. 对test3 文件进行直接修改 'linux' 为'LINUX' 
+>6. 将以上代码放在hw2.sh 中保存，并用 bash hw.sh 操作实现
+
 **任务完成情况**
 
 ```
@@ -65,12 +64,11 @@ yinxiaoling: 90 最后忘记直接修改test3.txt 文件
 
 **20180829发布，20180830检查**
 
-```
-1. 使用awk 命令将test3.txt 文件中的空格符号换成tab 分隔符
-2. 使用awk+if 语句来做判断，当第一列为'He' 'You' 'I' 的时候分别进行不同处理，详细如下图，结果文件保存为hw3_1.txt
-3. 提取'He' 'You' 'I' 及相关级别 生成文件hw3_2.txt
-4. 将所使用的代码保存在hw3.sh 
-```
+>1. 使用awk 命令将test3.txt 文件中的空格符号换成tab 分隔符
+>2. 使用awk+if 语句来做判断，当第一列为'He' 'You' 'I' 的时候分别进行不同处理，详细如下图，结果文件保存为hw3_1.txt
+>3. 提取'He' 'You' 'I' 及相关级别 生成文件hw3_2.txt
+>4. 将所使用的代码保存在hw3.sh 
+
 **hw3_1.txt**
 ![](http://p5v6ynkbf.bkt.clouddn.com/18-8-29/62444597.jpg)
 
@@ -103,12 +101,12 @@ yinxiaoling: 30 OFS 不是ORS
 **20180904发布，20180905检查**
 **相关支持文件在路径 /public/hstore2/luming/study/linux/Task_release/task4 下面**
 
-```
-1.使用awk输出sutdent.txt中年龄大于等于15的到文件result1.txt
-2.使用awk输出sutdent.txt中性别为M，且体重小于50的结果到文件result2.txt
-3.使用awk输出sutdent.txt中ID、Height、Weight三列到文件result3.txt
-4.使用awk匹配文件sutdent.txt和score.txt，如果学生id存在则将其分数添加到sutdent.txt最后一列，不存在添加NA，输出结果到result4.txt
-```
+
+>1.使用awk输出sutdent.txt中年龄大于等于15的到文件result1.txt
+>2.使用awk输出sutdent.txt中性别为M，且体重小于50的结果到文件result2.txt
+>3.使用awk输出sutdent.txt中ID、Height、Weight三列到文件result3.txt
+>4.使用awk匹配文件sutdent.txt和score.txt，如果学生id存在则将其分数添加到sutdent.txt最后一列，不存在添加NA，输出结果到result4.txt
+
 **示例如下：**
 
 ![](http://p5v6ynkbf.bkt.clouddn.com/18-9-5/58913642.jpg)
@@ -128,12 +126,11 @@ maHaiChao:75 最后一个还没完成
 **20180918发布，20180924检查**
 **相关支持文件在路径 /public/hstore2/luming/study/linux/Task_release/task5 下面**
 
-```
-1. 查看当前用户并显示用户个数
-2. 取 cancer.txt 与 anti-cancer.txt 交集结果输入到result1.txt
-3. 取 cancer.txt 与 anti-cancer.txt 并集结果输入到result2.txt
-4. 取 cancer.txt 中独有的结果而在 anti-cancer.txt 没有的结果输入到result3.txt
-5. 取 cancer.txt 中没有的结果而在 anti-cancer.txt 独有的结果输入到result4.txt
-6. 写个循环脚本，读取当前路径下的result开头的文件，用各result文件与 fpkm_anno_test.txt匹配ID，匹配到的结果输出到result_anno.txt
+
+>1. 查看当前用户并显示用户个数
+>2. 取 cancer.txt 与 anti-cancer.txt 交集结果输入到result1.txt
+>3. 取 cancer.txt 与 anti-cancer.txt 并集结果输入到result2.txt
+>4. 取 cancer.txt 中独有的结果而在 anti-cancer.txt 没有的结果输入到result3.txt
+>5. 取 cancer.txt 中没有的结果而在 anti-cancer.txt 独有的结果输入到result4.txt
+>6. 写个循环脚本，读取当前路径下的result开头的文件，用各result文件与 fpkm_anno_test.txt匹配ID，匹配到的结果输出到result_anno.txt
 如result1.txt 文件与 fpkm_anno_test.txt 匹配后，输出后者含有result1.txt 信息的所有行到result_anno.txt
-```
