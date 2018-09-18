@@ -55,9 +55,11 @@ wenxing: 100
 
 ```
 chenmin: 90 最后忘记直接修改test3.txt 文件
-dingshan: 70 根据脚本生成的test3.txt 是空的
-tianquan: 没发现结果
+dingshan: 80 根据脚本生成的test3.txt 是空的
+tianquan: 80 sed 的命令可以再尝试下，很接近了
 yinxiaoling: 90 最后忘记直接修改test3.txt 文件 
+lujiawei：100
+maHaiChao：80 最后sed 也使用生成重复行了
 ```
 
 ## 任务3
@@ -90,10 +92,11 @@ awk -F'\t|;|:' -v OFS="\t" '{print $1,$NF}' hw3_1.txt>hw3_2.txt
 **任务完成情况**
 
 ```
-chenmin: 60 跑脚本生成的文件不对
-dingshan: 没发现结果
-tianquan: 没发现结果
-yinxiaoling: 30 OFS 不是ORS
+chenmin: 100
+yinxiaoling: 90 i 需要换成大写，进步很大，有了注释
+lujiawei： 95 注意第一个level 后面是：号
+maHaiChao： 100
+tianquan： 70 第一行生成的文件注意下，不要重名，结果出现空的
 ```
 
 ## 任务4
