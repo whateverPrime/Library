@@ -147,3 +147,51 @@ mahaichao: 100 做的很好~也有两种方法解答，下次争取早点交哈
 
 > 9. 字符串s=“abcdeabcdabcaba”，输出字符串s中出现频率最高的字符
 
+** 作业完成情况 **
+
+```
+lujiawei： 80  4/5题是从0开始，while循环i = 0，for循环range(0, 11)
+
+tianquan： 75  第三题思路可以，最好把它用代码写出来，4/5题同上，从0开始：while循环i = 0，for循环range(0, 11)
+
+chenmin： 70 问题1）为什么number1和number2不需要做eval转化也可以执行?
+                  input默认返回的是字符串类型，字符串间也可以比大小（按ASCII码比），所以不用eval转化也能得到结果。（试试看数字和字母比是什么结果？）
+               2）第二题elif已有否定上一层判断的意思，不需要再判断and score <... 
+               3）第三题pycharm上是可以运行的，6/7题结果有问题，else:pass没有缩进，且不需要加。
+               4）第九题方法有很多，可以用字典形式，将每个字符和出现的次数生成一个字典，获得次数最多对应的key；也可以参考wangyayu、tianquan或lujiawei的方法
+
+yinxiaoling： 68 1）第二题if 后面不需要加括号哈，elif也不用再判断c <...
+                 2）第三题可以把想的用代码写出来
+                 3）第七题average变量名前后不一样，所以出不了结果
+                 4）最后一题方法很多，可以用字典形式，将每个字符和出现的次数生成一个字典，获得次数最多对应的key；也可以参考wangyayu、tianquan或lujiawei的方法
+
+wangyayu： 90 1）第二题elif已有否定上一层判断的意思，不用再判断a <... 
+              2）第三题是可以的，把int改成eval更好，否则无法执行小数的判断
+              3）第五题for循环range（0,11）
+              PS：最后一题方法很棒~
+
+```
+
+##  Exercise4 ##
+
+> 文本处理 & 正则表达式
+
+### 文本处理 ###
+
+>1.   请读取 test1.txt，打印输出文本内容；
+
+>2.   请去除文本中的空行，然后输出该文本的总行数；
+
+>3.   请将文本中的 “python”  改为 “linux”，写入新文件new.txt； 
+
+> 4.  请读取  test2.txt，将文件中所有mRNA对应的基因序列号存入mRNA.txt，lncRNA对应序列号存入lncRNA.txt。
+
+
+
+### 正则表达式 ###
+
+> 5. 请使用re 模块，实现：随机输入一行字符，分别统计其中的数字、字母、空格和其他字符出现的个数；
+
+> 6. 假设有一串字符 "date:2018-09-25 email:a123@oebiotech.com phone:021-12345678 tel:123456789 website:www.oebiotech.com ip:192.168.10.129 email:b123@oebiotech.com email:c123@lumingbio.com email:d123@lumingbio.com"
+>
+>    请使用**re模块**分别匹配得到 日期date、phone、tel、website、ip及所有email信息。
