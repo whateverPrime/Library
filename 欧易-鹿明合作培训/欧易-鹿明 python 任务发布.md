@@ -158,17 +158,21 @@ chenmin： 70 问题1）为什么number1和number2不需要做eval转化也可�
                   input默认返回的是字符串类型，字符串间也可以比大小（按ASCII码比），所以不用eval转化也能得到结果。（试试看数字和字母比是什么结果？）
                2）第二题elif已有否定上一层判断的意思，不需要再判断and score <... 
                3）第三题pycharm上是可以运行的，6/7题结果有问题，else:pass没有缩进，且不需要加。
-               4）第九题方法有很多，可以用字典形式，将每个字符和出现的次数生成一个字典，获得次数最多对应的key；也可以参考wangyayu、tianquan或lujiawei的方法
+               4）第九题方法有很多，可以用字典形式，将每个字符和出现的次数生成一个字典，获得次数最多对应的key；也可以参考wangyayu、shousiyu、mahaichao、tianquan或lujiawei的方法
 
 yinxiaoling： 68 1）第二题if 后面不需要加括号哈，elif也不用再判断c <...
                  2）第三题可以把想的用代码写出来
                  3）第七题average变量名前后不一样，所以出不了结果
-                 4）最后一题方法很多，可以用字典形式，将每个字符和出现的次数生成一个字典，获得次数最多对应的key；也可以参考wangyayu、tianquan或lujiawei的方法
+                 4）最后一题方法很多，可以用字典形式，将每个字符和出现的次数生成一个字典，获得次数最多对应的key；也可以参考wangyayu、shousiyu、mahaichao、tianquan或lujiawei的方法
 
 wangyayu： 90 1）第二题elif已有否定上一层判断的意思，不用再判断a <... 
               2）第三题是可以的，把int改成eval更好，否则无法执行小数的判断
               3）第五题for循环range（0,11）
               PS：最后一题方法很棒~
+
+shousiyu： 95  第三题把int改成eval更好，而且是从小到大输出哈
+
+mahaichao： 90 第二题同样也是if 后面不用加括号哈，其他做的可以，第三题可以试着写写看
 
 ```
 
