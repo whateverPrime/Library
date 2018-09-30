@@ -126,8 +126,8 @@ maHaiChao:75 最后一个还没完成
 
 ## 任务5
 
-**20180918发布，20180924检查**
-**相关支持文件在路径 /public/hstore2/luming/study/linux/Task_release/task5 下面**
+** 20180918发布，20180924检查 **
+** 相关支持文件路径 /public/hstore2/luming/study/linux/Task_release/task5  **
 
 
 >1. 查看当前用户并显示用户个数
@@ -137,3 +137,19 @@ maHaiChao:75 最后一个还没完成
 >5. 取 cancer.txt 中没有的结果而在 anti-cancer.txt 独有的结果输入到result4.txt
 >6. 写个循环脚本，读取当前路径下的result开头的文件，用各result文件与 fpkm_anno_test.txt匹配ID，匹配到的结果输出到result_anno.txt
 如result1.txt 文件与 fpkm_anno_test.txt 匹配后，输出后者含有result1.txt 信息的所有行到result_anno.txt
+
+
+## 任务6
+
+** 20180930发布，20181010检查，本次任务主要熟悉下常规辅助代码，相关代码放在txt 文件里即可 **
+** 相关支持文件路径 /public/hstore2/luming/study/linux/Task_release/task6 **
+
+>1. 查看  linux服务器的文件系统的磁盘空间占用情况；利用pnodes 代码查看各节点情况，适当解释下
+>2. 软链接  从支持文件路径下的linkage.txt 文件软链接到自己的task6路径下
+>3. 修改自己路径下的linkage.txt 文件权限“所属用户：读写执行；组用户跟其他用户都是只读”
+>4. 利用wget 下载linkage.txt 文件到当前路径下
+>5. 解压下载文件并查看task6 目录大小
+>6. 从解压后的文件提取第三列为gene 及 exon 的信息，要求：前1-8列，第9列要求：
+>第三列为gene 提取相关Name 信息; 三列为exon 提取相关Parent 信息,并利用transcript 这行作为中专，修改exon 的Parent 信息讲之与gene 的Name 信息一致，提示如下：
+
+![](http://p5o85qxhq.bkt.clouddn.com/18-9-30/89310848.jpg)
