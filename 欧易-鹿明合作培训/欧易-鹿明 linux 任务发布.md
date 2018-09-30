@@ -139,7 +139,7 @@ maHaiChao:75 最后一个还没完成
 如result1.txt 文件与 fpkm_anno_test.txt 匹配后，输出后者含有result1.txt 信息的所有行到result_anno.txt
 
 
-## 任务6
+## 任务6（国庆节快乐）
 
 ** 20180930发布，20181010检查，本次任务主要熟悉下常规辅助代码，相关代码放在txt 文件里即可 **
 ** 相关支持文件路径 /public/hstore2/luming/study/linux/Task_release/task6 **
