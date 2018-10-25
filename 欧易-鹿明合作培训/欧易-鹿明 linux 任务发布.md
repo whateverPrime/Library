@@ -164,10 +164,22 @@ maHaiChao:75 最后一个还没完成
 
 ## 任务7
 
-** 20181015发布，20181022检查，作业脚本以task7.sh 命名**
+** 20181015发布，20181022检查，作业脚本以task7.sh 命名 **
 
 >1. 在自己的路径task7下创建字母从a到z 为命名的26个文件夹。
 >2. 在各自命名的文件夹创建空白的fasta 文件，名字为对应的文件夹名称，如在文件夹a 里创建 a.fasta 
 >3. 查看task7下当前路径下的文件夹数量；查看task7路径下包括自路径下所有文件数量
 >4. 根据文件file1.txt的第一列和文件file2.txt的第二列匹配，生成file3.txt文件 （相关文件路径/public/hstore2/luming/study/linux/Task_release/task7）
 >5. 将file3.txt 文件横竖转置生成file4.txt 文件
+
+
+## 任务8
+
+** 此次任务以截图为准，打包发我邮件即可 siyu.shou@oebiotech.com **
+
+>1. pnodes 查看节点投递情况
+>2. 利用top 查看当前节点正在运行任务情况
+>3. 在task8下创建文件夹clean_data 及 genome, 并将/public/hstore2/luming/study/linux/Task_release/task8 下面两个文件夹中对应的文件软链接到自己的路径下
+>4. 用qsub 命令提交任务，脚本为 /public/hstore2/luming/study/linux/Task_release/task8/1.2.hisat2_alignment_dUTP.pbs
+设置 队列数为1，内核数目2，投递节点为hcu，最大运行时间为1200：00：00小时，任务命名为hisat2
+>5. 哪些代码可以查看任务运行情况？ 哪些任务是可以杀掉刚刚提交的任务？ （pnodes 查看后如果节点负载比较高可以杀掉刚刚的任务）
