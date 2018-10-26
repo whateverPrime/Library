@@ -234,3 +234,40 @@ yinxiaoling： 70 第四题lncRNA.txt结果是空的；第五题匹配其他字�
 > 4. 使用命令行工具（click、argparse 、fire等 可任选其一）封装第一题的脚本，使之能接收命令行参数，在终端运行。
 
 >运行命令如：python  exercise5.py  -i  1.txt  -o  result.txt
+
+** 作业完成情况 **
+
+```
+lujiawei： 82  第三题最后输出GC含量最高的序列，应为idline1 赋值后的变量
+mahaichao： 80  第三题统计GC含量有点问题，可以用 Bio.SeqUtils模块中GC() 直接得到GC。[from Bio.SeqUtils import GC]
+
+关于BIO模块的学习可参考如下网页：
+https://biopython-cn.readthedocs.io/zh_CN/latest/cn/chr02.html
+http://blog.sina.com.cn/s/blog_6babbcb801017klq.html
+
+```
+
+##  Exercise6
+
+**20181026发布，20181105检查。**
+
+>  涉及到的相关文件位于华为云 /public/hstore2/luming/study/python/Exercise6 路径下.
+
+>  pandas简明教程： http://pandas.pydata.org/pandas-docs/stable/10min.html
+
+### Pandas 数据处理
+
+>1.   根据 info.txt 的gene_id列，匹配输出list.txt 在info.txt中存在的内容；
+
+> 2. 提取出 info.txt 中的gene_id列、A2列和B2列；
+
+> 3. 将 info.txt的最后一列按照“；”拆分
+
+> 4. 在第三题的基础上，输出拆分后的表格全部内容，共10列。（可采用merge方法）
+
+
+
+```
+下次的作业准备主要让大家练习一下python画图工具（seaborn或Matplotlib）。
+通过几次练习大家已经学习接触了python基础和常用模块，大家如果有兴趣继续深入学习的话，或许也可以加入欧易内部的python刷题小组~~ 把我们之前刷过的题从头到尾做一遍，一定可以让你从python萌新变为python老白~~~！
+```
