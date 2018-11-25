@@ -1,9 +1,9 @@
 # 欧易-鹿明 linux 任务发布
 
-**这是欧易-鹿明 共同学习进步的学习小群，会不断更新有关linux 的作业及相关解释，平均2周一次测试**
 [TOC]
 
-##前置任务及相关软件
+> 前置任务及相关软件
+
 
 ```
 前置任务：在华为云路径下：/public/hstore2/luming/study/linux
@@ -20,6 +20,7 @@
 
 
 **linux 任务1（20180823发布，20180824统一检查）**
+
 >1.创建目录test1和test2。
 >2.在test1下面创建一个名叫test.txt的文件。
 >3.为test.txt文件增加内容为“I am studying linux.”。
@@ -27,6 +28,7 @@
 >5.把test1目录移动到test2目录下。
 >6.进入test2目录下的test1目录，删除test.txt文件。
 >7.在第6题的基础上，退出到上一级目录，删除test1目录。
+
 
 **任务完成情况**
 
@@ -51,6 +53,7 @@ wenxing: 100
 >5. 对test3 文件进行直接修改 'linux' 为'LINUX' 
 >6. 将以上代码放在hw2.sh 中保存，并用 bash hw.sh 操作实现
 
+
 **任务完成情况**
 
 ```
@@ -70,6 +73,7 @@ maHaiChao：80 最后sed 也使用生成重复行了
 >2. 使用awk+if 语句来做判断，当第一列为'He' 'You' 'I' 的时候分别进行不同处理，详细如下图，结果文件保存为hw3_1.txt
 >3. 提取'He' 'You' 'I' 及相关级别 生成文件hw3_2.txt
 >4. 将所使用的代码保存在hw3.sh 
+
 
 **hw3_1.txt**
 ![](http://p5v6ynkbf.bkt.clouddn.com/18-8-29/62444597.jpg)
@@ -110,6 +114,7 @@ tianquan： 70 第一行生成的文件注意下，不要重名，结果出现�
 >3.使用awk输出sutdent.txt中ID、Height、Weight三列到文件result3.txt
 >4.使用awk匹配文件sutdent.txt和score.txt，如果学生id存在则将其分数添加到sutdent.txt最后一列，不存在添加NA，输出结果到result4.txt
 
+
 **示例如下：**
 
 ![](http://p5v6ynkbf.bkt.clouddn.com/18-9-5/58913642.jpg)
@@ -138,8 +143,11 @@ maHaiChao:75 最后一个还没完成
 >6. 写个循环脚本，读取当前路径下的result开头的文件，用各result文件与 fpkm_anno_test.txt匹配ID，匹配到的结果输出到result_anno.txt
 如result1.txt 文件与 fpkm_anno_test.txt 匹配后，输出后者含有result1.txt 信息的所有行到result_anno.txt
 
+
 ```
 作业完成情况：
+本次题目要考虑到文件cancer.txt 有重复内容，去重代码 sort -u
+
 ```
 
 ## 任务6
@@ -154,6 +162,7 @@ maHaiChao:75 最后一个还没完成
 >5. 解压下载文件并查看task6 目录大小
 >6. 从解压后的文件提取第三列为gene 及 exon 的信息，要求：前1-8列，第9列要求：
 >第三列为gene 提取相关Name 信息; 三列为exon 提取相关Parent 信息,并利用transcript 这行作为中转，修改exon 的Parent 信息讲之与gene 的Name 信息一致，提示如下：
+
 
 ![](http://p5o85qxhq.bkt.clouddn.com/18-9-30/89310848.jpg)
 
@@ -183,3 +192,16 @@ maHaiChao:75 最后一个还没完成
 >4. 用qsub 命令提交任务，脚本为 /public/hstore2/luming/study/linux/Task_release/task8/1.2.hisat2_alignment_dUTP.pbs
 设置 队列数为1，内核数目2，投递节点为hcu，最大运行时间为1200：00：00小时，任务命名为hisat2
 >5. 哪些代码可以查看任务运行情况？ 哪些任务是可以杀掉刚刚提交的任务？ （pnodes 查看后如果节点负载比较高可以杀掉刚刚的任务）
+
+
+## 任务9
+
+** 本次任务代码不要写成脚本形式，只需要txt 文件保存在各自的路径下即可；IP地址已做更换，新的路径为：/public/hstore5/luming/study/linux   ** 
+
+
+
+>1. 修改个人密码 （只给代码哈）
+>2. 判断当前节点 CPU负载 （uptime 命令），需要用一两句文字说明，比如uptime值是多少可以判断为高负载（可以根据pnodes 命令结合来查看）
+>3. 统计/usr/lib目录下小于5M并以.txt结尾的文件名到 5m.txt
+>4. 把f1.txt文件中每一行的第一个和第二个逗号(,)替换为tab分隔符 生成f2.txt
+>5. 只修改 f1.txt 文件 每行最后一个逗号为tab 分隔符 生成f3.txt
