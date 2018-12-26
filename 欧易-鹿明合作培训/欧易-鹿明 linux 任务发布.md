@@ -21,13 +21,13 @@
 
 **linux 任务1（20180823发布，20180824统一检查）**
 
->1.创建目录test1和test2。
->2.在test1下面创建一个名叫test.txt的文件。
->3.为test.txt文件增加内容为“I am studying linux.”。
->4.把test.txt文件拷贝到test2目录下。
->5.把test1目录移动到test2目录下。
->6.进入test2目录下的test1目录，删除test.txt文件。
->7.在第6题的基础上，退出到上一级目录，删除test1目录。
+>1. 创建目录test1和test2。
+>2. 在test1下面创建一个名叫test.txt的文件。
+>3. 为test.txt文件增加内容为“I am studying linux.”。
+>4. 把test.txt文件拷贝到test2目录下。
+>5. 把test1目录移动到test2目录下。
+>6. 进入test2目录下的test1目录，删除test.txt文件。
+>7. 在第6题的基础上，退出到上一级目录，删除test1目录。
 
 
 **任务完成情况**
