@@ -109,10 +109,10 @@ tianquan： 70 第一行生成的文件注意下，不要重名，结果出现�
 **相关支持文件在路径 /public/hstore2/luming/study/linux/Task_release/task4 下面**
 
 
->1.使用awk输出sutdent.txt中年龄大于等于15的到文件result1.txt
->2.使用awk输出sutdent.txt中性别为M，且体重小于50的结果到文件result2.txt
->3.使用awk输出sutdent.txt中ID、Height、Weight三列到文件result3.txt
->4.使用awk匹配文件sutdent.txt和score.txt，如果学生id存在则将其分数添加到sutdent.txt最后一列，不存在添加NA，输出结果到result4.txt
+>1. 使用awk输出sutdent.txt中年龄大于等于15的到文件result1.txt
+>2. 使用awk输出sutdent.txt中性别为M，且体重小于50的结果到文件result2.txt
+>3. 使用awk输出sutdent.txt中ID、Height、Weight三列到文件result3.txt
+>4. 使用awk匹配文件sutdent.txt和score.txt，如果学生id存在则将其分数添加到sutdent.txt最后一列，不存在添加NA，输出结果到result4.txt
 
 
 **示例如下：**
