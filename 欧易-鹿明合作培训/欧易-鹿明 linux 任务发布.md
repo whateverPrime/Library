@@ -1,5 +1,10 @@
 # 欧易-鹿明 linux 任务发布
 
+```
+更新：20190305 参考答案已存放在路径 /public/hstore5/study/linux/shousiyu 
+感谢各位的积极参与
+```
+
 [TOC]
 
 > 前置任务及相关软件
