@@ -3,6 +3,9 @@
 ```
 更新：20190305 参考答案已存放在路径 /public/hstore5/study/linux/shousiyu 
 感谢各位的积极参与
+
+更新：20190617 参考答案一并放在网页上
+以便没有集群账号的小伙伴参考
 ```
 
 [TOC]
@@ -35,14 +38,19 @@
 >7. 在第6题的基础上，退出到上一级目录，删除test1目录。
 
 
-**任务完成情况**
+**参考代码**
 
 ```
-chenmin: 85，但是要注意mv操作，是重命名还是是转移路径
-dingshan: 80，但是也要注意mv操作跟cp命令，哪个是拷贝；此外作业脚本最好一键化能跑完的，具体过程不需要写，绝对路径看着也挺多的，相对路径就可以了；最后一个cd 什么情况
-tianquan: 你的结果为啥跟chenmin的一样 :D
-yinxiaoling: 你的结果为啥也跟chenmin的一样 ：P
-wenxing: 100
+1. mkdir test1 test2
+2. touch test1/test.txt
+3. echo "I am studying linux.">>test1/test.txt
+4. mv test1/test.txt test2/
+5. mv test1 test2/
+6. cd test2/test1
+rm test.txt
+7. cd ..
+rm -r test1
+
 ```
 
 ## 任务2
@@ -59,15 +67,15 @@ wenxing: 100
 >6. 将以上代码放在hw2.sh 中保存，并用 bash hw.sh 操作实现
 
 
-**任务完成情况**
+**参考代码**
 
 ```
-chenmin: 90 最后忘记直接修改test3.txt 文件
-dingshan: 80 根据脚本生成的test3.txt 是空的
-tianquan: 80 sed 的命令可以再尝试下，很接近了
-yinxiaoling: 90 最后忘记直接修改test3.txt 文件 
-lujiawei：100
-maHaiChao：80 最后sed 也使用生成重复行了
+1. touch test2/hw2.sh
+2. sed 's/linux/LINUX/g' test.txt >test2.txt
+3. sed '1a He is studying linux!' test.txt >test3.txt
+4. sed -i '2i You are studying linux!' test3.txt
+5. sed -i 's/linux/LINUX/g' test3.txt
+6. 自己贴代码咯
 ```
 
 ## 任务3
@@ -79,34 +87,19 @@ maHaiChao：80 最后sed 也使用生成重复行了
 >3. 提取'He' 'You' 'I' 及相关级别 生成文件hw3_2.txt
 >4. 将所使用的代码保存在hw3.sh 
 
-
-**hw3_1.txt**
-![](http://p5v6ynkbf.bkt.clouddn.com/18-8-29/62444597.jpg)
-
-**hw3_2.txt**
-![](http://p5v6ynkbf.bkt.clouddn.com/18-8-29/55437660.jpg)
-
-**希望大家做到考后100分，逐渐熟练起来， 代码示例如下：（鼓励大家有不同的方法）** 
+**参考代码** 
 
 ```
-#先对test3.txt 文件直接替换空格为tab分隔符
+1. 先对test3.txt 文件直接替换空格为tab分隔符
 sed -i 's/ /\t/g' test3.txt
 
-#利用三个条件匹配加上信息
+2. 利用三个条件匹配加上信息
 cat test3.txt |awk -F'\t' -v OFS='\t' '{if($1=="He") print $0";level:bad";else if($1=="You") print $0";level:excellent";else if($1=="I") print $0";python;level:awesome"}' >hw3_1.txt
 
-#设置三种分隔符为输入符号，输出分隔符设定为tab分隔符，$NF指的是啥自己查~~
+3. 设置三种分隔符为输入符号，输出分隔符设定为tab分隔符，$NF指的是啥自己查~~
 awk -F'\t|;|:' -v OFS="\t" '{print $1,$NF}' hw3_1.txt>hw3_2.txt
 ```
-**任务完成情况**
 
-```
-chenmin: 100
-yinxiaoling: 90 i 需要换成大写，进步很大，有了注释
-lujiawei： 95 注意第一个level 后面是：号
-maHaiChao： 100
-tianquan： 70 第一行生成的文件注意下，不要重名，结果出现空的
-```
 
 ## 任务4
 
@@ -120,19 +113,15 @@ tianquan： 70 第一行生成的文件注意下，不要重名，结果出现�
 >4. 使用awk匹配文件sutdent.txt和score.txt，如果学生id存在则将其分数添加到sutdent.txt最后一列，不存在添加NA，输出结果到result4.txt
 
 
-**示例如下：**
-
-![](http://p5v6ynkbf.bkt.clouddn.com/18-9-5/58913642.jpg)
-
-**任务完成情况**
+**参考代码**
 
 ```
-chenmin: 100
-tianquan: 100 最好加上注释哈
-yinxiaoling: 80 没有result3.txt 文件
-lujiawei:90 只能在自己的路径下运行哈，输入输出不需要用绝对路径
-maHaiChao:75 最后一个还没完成
+1. awk -F'\t' '{if($3 >= 15) print $0}' student.txt > result1.txt
+2. awk -F'\t' '{if($2 == "M" && $5 < 50) print $0}' student.txt >result2.txt
+3. awk -F'\t' '{print $1,$4,$5}' student.txt > result3.txt
+4. awk 'NR==FNR{a[$1]=$2} NR!=FNR{if($1 in a){print($0 "\t" a[$1])}else print($0 "\t" "NA")}' score.txt student.txt
 ```
+
 
 ## 任务5
 
@@ -149,9 +138,36 @@ maHaiChao:75 最后一个还没完成
 如result1.txt 文件与 fpkm_anno_test.txt 匹配后，输出后者含有result1.txt 信息的所有行到result_anno.txt
 
 
+**参考代码**
 ```
-作业完成情况：
 本次题目要考虑到文件cancer.txt 有重复内容，去重代码 sort -u
+1.
+who
+who |wc -l
+
+2. 交集考虑到两点：1.cancer.txt 有重复内容；2.result1文件表头，可以保留表头放在第一行，也可以直接剔除
+sort -u cancer.txt |sort - anti_cancer.txt |uniq -d |grep -v "gene_id" >result1.txt
+
+3. 并集
+cat anti_cancer.txt cancer.txt |sort -u |grep -v "gene_id" >result2.txt
+
+4. 取cancer.txt 独有结果,先对cancer.txt 去重生成文件cancer_fixed.txt
+sort -u cancer.txt >cancer_fixed.txt
+awk -F'\t' -v OFS='\t' 'NR==FNR{a[$1]=$1;next}{if($1==a[$1]) print $1,a[$1];else print $1,""}' result1.txt cancer_fixed.txt |awk -F'\t' -v OFS="\t" '{if($2=="")print $1}' >result3.txt
+
+5. 取anti_cancer.txt 独有结果
+awk -F'\t' -v OFS='\t' 'NR==FNR{a[$1]=$1;next}{if($1==a[$1]) print $1,a[$1];else print $1,""}' result1.txt anti_cancer.txt |awk -F'\t' -v OFS="\t" '{if($2=="")print $1}' |grep -v "gene_id" >result4.txt
+
+6. 写个脚本批量匹配
+dos2unix result*.txt
+for i in $(ls result*.txt) ;
+	do
+	sed -i "1i gene_id" $i
+	n=${i%.txt}
+	mkdir $n
+	awk -F "\t" 'NR==FNR{a[$1]=$1;b[$1]=$2"\t"$3"\t"$4"\t"$5"\t"$6"\t"$7"\t"$8"\t"$9"\t"$10}NR>FNR{if($1==a[$1]){print $1,b[$1]}else{print $1"\t\t\t\t\t\t\t\t\t"}}' fpkm_anno_test.txt $i >${n}_anno.txt
+	mv ${n}_anno.txt $n/
+	done
 
 ```
 
@@ -169,10 +185,41 @@ maHaiChao:75 最后一个还没完成
 >第三列为gene 提取相关Name 信息; 三列为exon 提取相关Parent 信息,并利用transcript 这行作为中转，修改exon 的Parent 信息讲之与gene 的Name 信息一致，提示如下：
 
 
-![](http://p5o85qxhq.bkt.clouddn.com/18-9-30/89310848.jpg)
-
+**参考代码**
 ```
-作业完成情况：
+1.
+df -h
+pnodes 10/20 该节点总共20个核心，目前已投递使用10个核心
+
+2.
+ln -s /public/hstore2/luming/study/linux/Task_release/task6/linkage.txt ./
+
+3.
+
+chmod -R 744 linkage.txt
+
+4.
+wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/196/035/GCF_000196035.1_ASM19603v1/GCF_000196035.1_ASM19603v1_genomic.gff.gz
+
+5.
+gunzip *.gz
+
+du -sh ./
+
+6. 首先提取 gene 跟 exon 前8列及相关的第9列信息（gene 找关键词 Name, exon 找关键词 Parent）
+awk -F'\t' -v OFS='\t' '$3=="gene"||$3=="exon"' GCF_000196035.1_ASM19603v1_genomic.gff |awk -F'\t|;' -v OFS='\t' '$3=="gene"{ {for (f=1; f <= NF; f+=1) {if ($f ~ /Name=/) {print $1,$2,$3,$4,$5,$6,$7,$8,$f}}}}$3=="exon"{ {for (f=1; f <= NF; f+=1) {if ($f ~ /Parent=/) {print $1,$2,$3,$4,$5,$6,$7,$8,$f}}}} ' |sed 's/Name=//g' |sed 's/Parent=//g' >test-gene_tmp.txt
+
+然后根据文件寻找能将 exon 的 Parent 转换成 gene 的 Name 的串起来的信息,请看第三列为mRNA的信息
+awk -F'\t' -v OFS='\t' '$3=="transcript"' GCF_000196035.1_ASM19603v1_genomic.gff |awk -F'\t|;' -v OFS='\t' '{print $9,$10}' |sed 's/ID=//g' |sed 's/Parent=//g' >tid2gid.list
+
+再根据 gene 的 ID 去定位 gene 的 Name
+awk -F'\t' -v OFS='\t' '$3=="gene"' GCF_000196035.1_ASM19603v1_genomic.gff |awk -F'\t|;' -v OFS='\t' '{print $9,$11}' |sed 's/ID=//g' |sed 's/Name=//g' >gid2gname.list
+
+根据 tid2gid.list 与 gid2gname.list 两文件 得到 exon 的 Parent 的信息最终从 tid 变为 gname
+awk -F'\t' -v OFS='\t' 'NR==FNR{a[$1]=$1;b[$1]=$2;next}{if($2==a[$2]) print $1,b[$2];else print $1.""}' gid2gname.list tid2gid.list >t2g.list
+
+最后再根据t2g.list 转化下 test-gene_tmp.gff 中 exon 的 Parent 信息
+awk -F'\t' -v OFS='\t' '{print $0}' t2g.list |awk -F'\t' -v OFS='\t' 'NR==FNR{a[$1]=$1;b[$1]=$2;next}{if($9==a[$9]) print $1,$2,$3,$4,$5,$6,$7,$8,b[$9];else print $0}' - test-gene_tmp.gff |awk -F'\t' -v OFS='\t' '{if($3=="gene") print $1,$2,$3,$4,$5,$6,$7,$8,"ID="$9"; Name="$9;else print $1,$2,$3,$4,$5,$6,$7,$8,"Parent="$9}' >test-gene.gff
 ```
 
 
@@ -186,7 +233,26 @@ maHaiChao:75 最后一个还没完成
 >4. 根据文件file1.txt的第一列和文件file2.txt的第二列匹配，生成file3.txt文件 （相关文件路径/public/hstore2/luming/study/linux/Task_release/task7）
 >5. 将file3.txt 文件横竖转置生成file4.txt 文件
 
+**参考代码**
+```
+1. 第一题跟第二题可以合并起来做
+for i in {a..z}
+do
+	mkdir $i
+	touch $i/$i.fasta
+done
 
+2. 查看当前路径下的文件夹数量及文件夹路径里面的文件
+ls -l|grep "^d"|wc -l
+ls -Rl|grep "^-"|wc -l
+
+3. 根据文件信息匹配,需要将两个文件转换为 unix 格式
+dos2unix *.txt
+awk -F' |\t' 'NR==FNR{a[$2]=$2;next}{if($1==a[$1]) print $0}' file2.txt file1.txt >file3.txt
+
+4. 横竖置换
+awk -F'\t' -v OFS='\t' '{for(i=0;++i<=NF;)a[i]=a[i]?a[i] FS $i:$i}END{for(i=0;i++<NF;)print a[i]}' file3.txt >file4.txt
+```
 ## 任务8
 
 ** 此次任务以截图为准，打包发我邮件即可 siyu.shou@oebiotech.com **
@@ -198,6 +264,25 @@ maHaiChao:75 最后一个还没完成
 设置 队列数为1，内核数目2，投递节点为hcu，最大运行时间为1200：00：00小时，任务命名为hisat2
 >5. 哪些代码可以查看任务运行情况？ 哪些任务是可以杀掉刚刚提交的任务？ （pnodes 查看后如果节点负载比较高可以杀掉刚刚的任务）
 
+**参考代码**
+```
+1. pnodes 查看节点投递情况
+直接输 pnodes ，一般能查看节点的核心数目及使用的核心数。
+
+2. 利用top 查看当前节点正在运行任务情况
+直接输 top ，能看到当前节点下用户正在执行的操作。
+
+#3. 
+mkdir clean_data genome
+ln -s /public/hstore5/study/linux/Task_release/task8/clean_data/* ./clean_data/
+ln -s /public/hstore5/study/linux/Task_release/task8/genome/* ./genome/
+
+#4. 
+qsub /public/hstore2/luming/study/linux/Task_release/task8/1.2.hisat2_alignment_dUTP.pbs -N hisat2 -l nodes=1:ppn=2 -q hcu
+
+#5. 
+qstat 查看用户投递的队列，队列编号及运行情况，R是运行，Q是排队，C是取消；根据队列编号可以用qdel +队列编号 取消投递的队列任务
+```
 
 ## 任务9
 
@@ -210,3 +295,21 @@ maHaiChao:75 最后一个还没完成
 >3. 统计/usr/lib目录下小于5M并以.txt结尾的文件名到 5m.txt
 >4. 把f1.txt文件中每一行的第一个和第二个逗号(,)替换为tab分隔符 生成f2.txt
 >5. 只修改 f1.txt 文件 每行最后一个逗号为tab 分隔符 生成f3.txt
+
+**参考代码**
+```
+1. 修改个人密码 （只给代码哈）
+passwd
+
+2. 
+uptime 可以查看当前节点负载情况，一般超过当前节点核心数目的2倍为高负载情况。
+
+3. 
+find /usr/lib/* -size -5M -type f >./5m.txt
+
+4. 
+sed 's/,/\t/;s/,/\t/' f1.txt >f2.txt
+
+5. 
+sed 's/\(.*\),/\1\t/' f1.txt >f3.txt
+```
